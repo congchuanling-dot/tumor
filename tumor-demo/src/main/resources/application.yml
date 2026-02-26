@@ -1,0 +1,13 @@
+server:
+  port: 8080
+
+# Tumor 混沌注入：仅测试/预发建议开启；生产务必 enabled: false
+# profile-only 留空表示不按 profile 限制；可填 dev,test,staging 只在这些 profile 下生效
+tumor:
+  enabled: true
+  profile-only:
+  heap-threshold: 0.8
+
+spring:
+  application:
+    name: tumor-demo
